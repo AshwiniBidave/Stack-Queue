@@ -20,6 +20,18 @@ public class QueueOperation {
         }
     }
 
+    public void Dequeue()
+    {
+        if (head == null)
+        {
+            System.out.println("Queue is Empty...");
+        }
+        else
+        {
+            head = head.next;
+        }
+    }
+
     public void Display()
     {
         Node temp = this.head;
